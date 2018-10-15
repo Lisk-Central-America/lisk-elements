@@ -46,6 +46,9 @@ declare module 'browserify-bignum' {
 		/** Return a new BigNum containing the instance value plus n. */
 		add(n: BigNum.BigNumCompatible): BigNum;
 
+		/** Return a new BigNum containing the instance value plus n. */
+		plus(n: BigNum.BigNumCompatible): BigNum;
+
 		/** Return a new BigNum containing the instance value minus n. */
 		sub(n: BigNum.BigNumCompatible): BigNum;
 
@@ -130,6 +133,9 @@ declare module 'browserify-bignum' {
 
 		/** Return a new BigNum containing the instance value plus n. */
 		export function add(left: BigNumCompatible, right: BigNumCompatible): BigNum;
+
+		/** Return a new BigNum containing the instance value plus n. */
+		export function plus(left: BigNumCompatible, right: BigNumCompatible): BigNum;
 
 		/** Return a new BigNum containing the instance value minus n. */
 		export function sub(left: BigNumCompatible, right: BigNumCompatible): BigNum;
